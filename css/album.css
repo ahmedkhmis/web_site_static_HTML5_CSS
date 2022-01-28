@@ -1,0 +1,63 @@
+
+body{font-family:dejavu sans, verdana; font-size:1em; margin:0; background-color:#fff}
+
+code{font-size:1.3em; color:brown}
+
+#jingle{display:none; position:fixed; top:0; left:0}
+
+#global{z-index:1; display:block; position:relative; margin-top:12px; width:1040px; height:450px; left:50%; margin-left:-520px; padding:0}
+
+#texte{display:inline-block; position:absolute; width:480px; height:301px; background-color:#fff; padding:0 10px; margin-top:0; font-size:0.85em; text-align:right; color:#666}
+
+#album{display:inline-block; position:absolute; width:520px; height:301px; left:520px}
+
+#couverture1{z-index:2; display:inline-block; position:absolute; left:0; top:0; width:510px; height:301px; cursor:pointer}
+
+#couverture3{z-index:2; display:inline-block; position:absolute; left:0; top:0; width:510px; height:301px}
+
+#couverture2{z-index:2; display:inline-block; position:absolute; left:0; top:0; width:0px; height:301px; cursor:pointer}
+
+#page3,#page5,#page7,#page9{z-index:2; display:inline-block; position:absolute; left:0; top:0; width:510px; height:301px; cursor:pointer}
+
+#page2,#page4,#page6,#page8,#page10{z-index:2; display:inline-block; position:absolute; left:0; top:0; width:0px; height:301px; cursor:pointer}
+
+#ombre1{z-index:20; display:none; position:absolute; top:0; left:5px; width:0; height:301px}
+
+#ombre2{z-index:20; display:none; position:absolute; width:40px; height:301px; top:0; left:-40px}
+
+#ombre3{z-index:20; display:inline-block; position:absolute; top:0; left:510px; width:0; height:301px}
+
+#ombre4{z-index:20; display:none; position:absolute; width:20px; height:301px; top:0; left:0}
+
+#ombre5{z-index:1; display:inline-block; position:absolute; width:0; height:301px; top:0; left:-510px}
+
+#misere1{z-index:32; display:none; position:absolute; left:-510px; top:0; width:1020px; height:340px; text-align:center; font-size:0.8em; color:#a24c7a; background-color:#fff; opacity:0.001; filter:alpha(opacity=0.01)}
+
+#fond{z-index:1; display:inline-block; position:absolute; left:0; top:0; width:536px; height:351px}
+
+#rota,#roto{z-index:20; display:none; position:absolute; left:498px; top:286px}
+
+#actif{z-index:31; display:inline-block; position:absolute; left:380px; top:320px; font-size:0.8em; width:120px; text-align:right}
+
+#leg0-1,#leg2-3,#leg4-5,#leg6-7,#leg8-9,#leg10-11{z-index:3; display:none; position:absolute; width:1020px; height:300px; left:-510px; top:316px}
+
+#texte1{display:inline-block; position:absolute; width:490px; height:180px; left:510px; top:0; padding:10px; background-image:url(../img/fond-texte1.jpg); color:#666; text-align:left; overflow:hidden}
+
+#texte3,#texte5,#texte7,#texte9,#texte11{display:inline-block; position:absolute; width:490px; height:180px; left:510px; top:0; padding:10px; background-image:url(../img/fond-texte1.jpg); color:#666; text-align:left; overflow:hidden}
+
+#texte2,#texte4,#texte6,#texte8,#texte10{display:inline-block; position:absolute; width:490px; height:180px; left:0; top:0; padding:10px; background-image:url(../img/fond-texte2.jpg); color:#666; text-align:right; overflow:hidden}
+
+.legende{font-size:0.85em}
+
+.numero{display:inline-block; margin-bottom:5px; background-color:#bbb; color:#fff; padding:1px 4px}
+
+.lien{color:#777; text-decoration:none; cursor:pointer}
+.lien:hover{color:#a24c7a}
+
+.lien2{color:#a24c7a; text-decoration:none; cursor:pointer}
+.lien2:hover{color:blue}
+
+
+
+
+

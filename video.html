@@ -1,0 +1,65 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Un texte qui fait des vagues !</title>
+<font color="yellow">
+<script type="text/javascript">
+//le texte que vous souhaitez afficher :
+var theText = "Comment les potiers travaillent???";
+
+//fonction qui retourne la taille d'un caractère du texte et sa position
+//pour changer la taille du texte, modifiez le nombre "72" par ce que vous voulez
+function nextSize(i,textLength)
+{
+	return (72*Math.abs( Math.sin(i/(textLength/3.14))));
+}
+
+//fonction qui qui fait changer la taille des caractères au fur et à mesure
+function sizeCycle(text,dis)
+{
+	output = "";
+	for(i=0;i<text.length;i++)
+	{
+		size = parseInt(nextSize(i+dis,text.length));
+		output += "<font style='font-size: "+ size +"pt' >"+text.substring(i,i+1)+"</font>";
+	}
+	document.getElementById('theDiv').innerHTML = output;
+}
+
+//fonction pour l'animation finale
+function doWave(n)
+{
+	sizeCycle(theText,n);
+	if(n > theText.length)n=0;
+	setTimeout("doWave(" + (n+1) + ")", 50);
+}
+</script>
+
+</head>
+
+
+<body onload="doWave(0)" background="img\img_utile/k55.jpg"><center><br>
+
+
+
+<div id="theDiv" style="text-align: center">
+	</div>
+<embed src="mp4/VID2.mp4" width="50%" height="300" >
+<br>
+<br><br>
+<video  controls loop width="60%" height="400"  >
+<source   src="mp4/VID1.mp4"  >
+</video>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
